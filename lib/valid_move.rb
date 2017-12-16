@@ -10,9 +10,8 @@ end
 
 # code your #valid_move? method here
 def valid_move?(board,index)
-  position = position_taken?(board,index)
-  within_board=within_board?(index)
-  if within_board?(index) && !position
+  position = 
+  if within_board?(index) && !position_taken?(board,index)
     true
   else
     false
