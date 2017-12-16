@@ -12,7 +12,7 @@ end
 def valid_move?(board,index)
   position = position_taken?(board,index)
   within_board=within_board?(index)
-  if within_board
+  if position
     true
   else
     false
